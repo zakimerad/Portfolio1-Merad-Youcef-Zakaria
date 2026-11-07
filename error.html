@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Non Trouvée</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+        
+        * {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            outline: none;
+            border: none;
+        }
+        
+        :root {
+            --bg-color: #c6c9cc;
+            --second-bg-color: #ffffff;
+            --main-color: #613df0;
+            --white-color: rgba(10, 10, 10, 0.907);
+            --disabled-color: #fff;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--white-color);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        /* Style basé sur votre .service-box */
+        .error-card {
+            background: var(--second-bg-color);
+            padding: 3rem;
+            border-radius: .4rem;
+            text-align: center;
+            transition: 0.3s ease;
+            cursor: default;
+            max-width: 45rem;
+            width: 100%;
+        }
+
+        .error-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 0px 1.5rem var(--main-color);
+        }
+
+        .error-code {
+            font-size: 7rem;
+            font-weight: 700;
+            color: var(--main-color);
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+
+        .error-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 1.2rem;
+        }
+
+        .error-desc {
+            font-size: 1.4rem;
+            margin-bottom: 2.5rem;
+            color: rgba(10, 10, 10, 0.7);
+        }
+
+        .btn-home {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: var(--second-bg-color);
+            color: var(--main-color);
+            border: 2px solid var(--main-color);
+            font-size: 1.5rem;
+            font-weight: 500;
+            border-radius: .4rem;
+            transition: 0.3s ease;
+        }
+
+        .error-card:hover .btn-home {
+            background: var(--main-color);
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="error-card">
+        <h1 class="error-code">404</h1>
+        <h2 class="error-title">Page Introuvable</h2>
+        <p class="error-desc">Désolé, la page que vous recherchez n'existe pas ou a été déplacée.</p>
+        <a href="index.html" class="btn-home">Retour à l'accueil</a>
+    </div>
+
+</body>
+</html>
